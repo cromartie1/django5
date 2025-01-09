@@ -53,8 +53,10 @@ def post_detail(request, year, month, day, post):
         'comments':comments,
         'form':form,
         'similar_posts':similar_posts
+     
         
     }
+    # See if I can ad a change. 
     return render(
         request,
         'blog/post_detail.html',
